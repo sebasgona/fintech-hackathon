@@ -1,0 +1,22 @@
+{
+  "name": "sinf",
+  "version": "1.0.0",
+  "description": "Fintech Hackathon App",
+  "main": "index.js",
+  "scripts": {
+    "test": "make test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sebasgona/fintech-hackathon.git"
+  },
+  "keywords": [
+    "npm"
+  ],
+  "author": "Sebastián González Arroyo (sebastian.gon.a@gmail.com)",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sebasgona/fintech-hackathon/issues"
+  },
+  "homepage": "https://github.com/sebasgona/fintech-hackathon#readme"
+}
