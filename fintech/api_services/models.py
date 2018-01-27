@@ -14,7 +14,8 @@ class UserModel(models.Model):
     user_address = models.CharField(max_length=300)
     user_gender = models.CharField(
         choices=gender_choices,
-        default='F'
+        default='F',
+        max_length=7
     )
     user_ine_id = models.IntegerField()
     user_passport_id = models.IntegerField()
@@ -37,3 +38,13 @@ class PassportModel(models.Model):
     passport_emision_date = models.DateField()
     passport_validity_date = models.DateField()
     passport_number = models.CharField(max_length=40)
+
+class Bucketlist(models.Model):
+    """This class represents the bucketlist model."""
+    name = models.CharField(max_length=255, blank=False, unique=True)
+    date_created = models.DateTimeField(auto_now_add=True)
+    date_modified = models.DateTimeField(auto_now=True)
+
+    def __str__(self):
+        """Return a human readable representation of the model instance."""
+        return "{}".format(self.name)
